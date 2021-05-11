@@ -5,28 +5,28 @@
 
 <script>
 export default {
-  props: ['score'],
+  props: ["score"],
   data() {
     return {
-      rank : null
-    }
+      rank: null,
+    };
   },
   mounted() {
     if (this.score < 250) {
-      this.rank = 'Ninja Fingers'
+      this.rank = "SO FAST MY GUY";
     } else if (this.score < 400) {
-      this.rank = 'Rapid Reflexes'
+      this.rank = "Not bad at all";
     } else {
-      this.rank = '...Snail Pace'
+      this.rank = "...Are you awake?";
     }
-  }
-}
+  },
+};
 </script>
 
 <style>
-  .rank {
-    font-size: 1.4em;
-    color: #0faf87;
-    font-weight: bold;
-  }
+.rank {
+  font-size: 1.4em;
+  color: #940faf;
+  font-weight: bold;
+}
 </style>
